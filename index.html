@@ -8,6 +8,9 @@
     <meta name="description" content="Store front for Bethany's Pie Shop">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Bethany's Pie Shop!</title>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
     <style>
         body {
             margin-top: 0px;
@@ -15,9 +18,10 @@
             margin-left: auto;
             margin-right: auto;
             background-color: #e6e4d9;
+            background-image: url('/images/pattern.png');
         }
 
-        #header {
+        #mainheader {
             background-color: #a593c2;
         }
 
@@ -49,19 +53,32 @@
             clear: both;
             width: 100%;
         }
+
+        /* compatiblility with older borwsers */
+        header,
+        footer,
+        section,
+        aside,
+        nav,
+        main,
+        article,
+        figure {
+            display: block;
+        }
     </style>
 </head>
 
 <body>
-    <header id="header">
+    <header id="mainheader">
         <nav>
-            Navigation Goes Here
+            <img src="/images/pie.png" alt="Bethany's Pie Shop Logo" width="55">
         </nav>
     </header>
 
     <div style="width: 1000px; margin-left: auto; margin-right: auto;">
 
         <aside id="leftmenu">
+            <img src="/images/bethanylogo.png" alt="Bethany's Logo" />
             <header>
                 <h4 style="text-align: center;">Browse our pies</h4>
             </header>
@@ -72,8 +89,10 @@
 
             <article>
                 <header>
-                    <h1>Welcome to Bethany's Pie Shop!</h1>
+                    <h1 style="font-size:35px;color:#a593c2">Welcome to Bethany's Pie Shop!</h1>
                 </header>
+
+                <img src="/images/bethany.jpg" alt="Bethany's header" width="700" />
 
                 <h2>Our History</h2>
 
@@ -100,7 +119,7 @@
                 <h3>Our Weekly Promotions</h3>
                 <h4>Cheese Cake</h4>
                 $12.95 - serves 4<br>
-                <img src="cheesecake.jpg" alt="Bethany's Cheese Cake" width="500" height="300">
+                <img src="images/cheesecake.jpg" alt="Bethany's Cheese Cake" width="500" height="300">
             </section>
         </main>
 
